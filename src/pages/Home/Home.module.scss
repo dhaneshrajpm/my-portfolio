@@ -1,0 +1,10 @@
+@import '../../styles/base.scss';
+
+.container {
+  @include imageWrapper('../../assets//home-page.jpg');
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

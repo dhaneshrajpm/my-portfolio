@@ -1,0 +1,7 @@
+@import '../../styles/base.scss';
+
+.container {
+  @include imageWrapper('../../assets//project-page.jpg');
+  height: 100Vh;
+  color: #fff;
+}

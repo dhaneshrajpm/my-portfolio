@@ -1,0 +1,29 @@
+@import '../../styles/base.scss';
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: $navTextColor;
+  position: absolute;
+  width: 100%;
+
+  :global(.ant-menu-item) {
+    &:global(.ant-menu-item-selected) {
+      :global(.ant-menu-title-content) {
+        color: $navSelected;
+      }
+
+      &::after {
+        border-bottom: solid $navBorder .1rem;
+      }
+    }
+
+    &:hover {
+      :global(.ant-menu-title-content) {
+        color: $navTextHover;
+      }
+    }
+  }
+}
